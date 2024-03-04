@@ -21,9 +21,15 @@ def calcular(numero1, numero2, operacion):
         case '%':
             # Operación Moulo
             respuesta = numero1 % numero2 
+# TODO: DEBES COLOCAR TU CÓDIGO AQUÍ# TODO: DEBES CREAR AQUÍ LOS CASES PARA LA OPERACIÓN DE LA RAIZ, COMPROBANDO LOS SÍMBOLOS r.
+        case 'r':
+            # Operación Raiz
+            respuesta = numero1 **(1/numero2)    
+
 
         case _:
             raise ValueError("Operación inválida.")
+
 
     return respuesta
 
@@ -34,7 +40,7 @@ if __name__ == '__main__':
     print("Ingrese el número 2")
     numero2 = int(input())
     # TODO: EN LA SIGUIENTE LÍNEA DEBES ADICIONAR EL SÍMBOLO DE ^ Y % PARA QUE LE APAREZCA AL USUARIO.
-    print("Ingrese la operación (+, -, *, /, ^, %)")
+    print("Ingrese la operación (+, -, *, /, ^, %, r)")
     operacion = input()
 
     resultado = calcular(numero1, numero2, operacion)
